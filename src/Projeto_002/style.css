@@ -1,0 +1,159 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+/* Text colors */
+.text-headline {
+	color: #e1624f;
+}
+.text-primary {
+	color: #1b1b1b;
+}
+.text-secondary {
+	color: #333333;
+}
+.text-tertiary {
+	color: #696969;
+}
+.accent-blue {
+	color: #0c51a7;
+}
+.accent-orange {
+	color: #e95e10;
+}
+.accent-pink {
+	color: #e5245e;
+}
+.accent-purple {
+	color: #591b98;
+}
+
+/* Text sizes */
+.sizeH1 {
+	font-size: 36px;
+}
+.sizeH2 {
+	font-size: 32px;
+}
+.sizeH3 {
+	font-size: 28px;
+}
+
+/* Text variations */
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.center {
+	text-align: center;
+}
+.upper {
+	text-transform: uppercase;
+}
+.liDisc {
+	list-style: disc;
+	list-style-position: inside;
+	padding-left: 6px;
+}
+
+/* Defaults */
+body {
+	background-color: #1e1e1e;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+/* Basic Layout and align */
+#page {
+	width: 1440px;
+	padding: 80px;
+	background-color: #29292e;
+	border-radius: 40px;
+	margin: 48px auto 28px;
+}
+#main {
+	background-color: white;
+}
+#centralize {
+	width: 1120px;
+	padding-top: 88px;
+	margin: auto;
+}
+
+/* Busan section */
+#busan h1 {
+	font-size: 36px;
+}
+#busan img {
+	margin-top: 40px;
+}
+#busan p:last-child {
+	margin-top: 24px;
+}
+
+#line {
+	padding-top: 40px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+/* Discover article */
+#discover {
+	padding-top: 64px;
+}
+#discover p {
+	padding-top: 8px;
+}
+
+/* Haedong article */
+#haedong {
+	padding-top: 64px;
+}
+#haedong h2 {
+	padding-top: 16px;
+}
+#haedong p {
+	padding-top: 8px;
+}
+
+/* Beomeo-sa article */
+#beomeo-sa {
+	padding-top: 64px;
+}
+#beomeo-sa h2 {
+	padding-top: 16px;
+}
+#beomeo-sa p {
+	padding-top: 8px;
+}
+
+/* Yongdusan article */
+#yongdusan {
+	padding-top: 64px;
+}
+#yongdusan h2 {
+	padding-top: 16px;
+}
+#yongdusan p {
+	padding-top: 8px;
+}
+
+/* Conclusion section */
+#conclusion {
+	padding-top: 40px;
+}
+
+/* footer */
+#footer {
+	padding-top: 40px;
+	padding-bottom: 64px;
+}
+#footer img {
+	vertical-align: middle;
+}
