@@ -5,6 +5,7 @@
 }
 
 :root {
+    /* Colors */
     --brand-color: #EF5F4C;
     --background-color: #FFFFFF;
     --surface-color: #F5F5F5;
@@ -12,9 +13,17 @@
     --shape-transparency: #FFFFFF8F;
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
+    /* Fonts */
+    --font-family: "Poppins", sans-serif;
+    /* Font Sizes */
+    --text-sm: 12px/1.75 var(--font-family);
+    --text-md: 14px/175% var(--font-family);
+    --text: 16px/1.5 var(--font-family);
+    --text-lg: bold 32px/125% var(--font-family);
 }
 
 body {
+    font: var(--text);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
 }
