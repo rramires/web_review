@@ -9,6 +9,7 @@
         overflow: hidden;
         border-radius: 4px;
         position: relative;
+        
         &::before{
             content: "";
             position: absolute;
@@ -16,5 +17,21 @@
             top: 50%;
             background: linear-gradient(180deg, transparent 0%, #020617);
         }
+
+        figcaption{
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+
+            &:has(.text-lg){
+                padding: 12px;
+            }
+
+            h2{
+                margin-top: 8px;
+            }
+        }
+
+
     }
 }
