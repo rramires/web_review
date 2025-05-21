@@ -33,4 +33,27 @@
             border-radius: 50%;
         }
     }
+
+    #description{
+        padding-top: 56px;
+        width: 680px;
+        text-align: center;
+
+        &>span{
+            font: var(--subtitle);
+            &>strong{
+                color: var(--red);
+                font-weight: 400;
+            }
+        }
+
+        &>h1{
+            color: var(--gray-600);
+            font: var(--title-lg);
+        }
+
+        &>p{
+            color: var(--gray-400);
+        }
+    }
 }
