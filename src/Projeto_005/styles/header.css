@@ -3,4 +3,34 @@
     
     background-image: url('../assets/Background_Intro.png');
     background-size: cover;
+
+    /* centralize all header content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #profile{
+        width: 96px;
+        height: 96px;
+        /* outside profile border  */
+        border: 3px solid var(--red);
+        border-radius: 50%;
+        /* padding to profile img */
+        padding: 5px;
+        /* required for absolute positioning below  */
+        position: relative;
+        /* </> position */
+        &>img:first-child{
+            position: absolute;
+            bottom: -8px;
+            right: -8px;
+        }
+        /* profile img */
+        &>img:last-child{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
 }
