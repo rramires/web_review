@@ -1,0 +1,23 @@
+#portfolio{
+    height: 917px;
+
+    background-color: rgb(0, 0, 0);
+
+    #title{
+        text-align: center;
+
+        h2{
+            font: var(--subtitle);
+            color: var(--red);
+        }
+
+        h3{
+            font: var(--title-md);
+            color: var(--gray-600);
+        }
+    }
+    
+    #projects{
+        
+    }
+}
