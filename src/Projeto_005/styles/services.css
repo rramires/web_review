@@ -1,0 +1,45 @@
+#services{
+    height: 480px;
+
+    background-color: var(--gray-100);
+
+    #title{
+        text-align: center;
+
+        h2{
+            font: var(--subtitle);
+            color: var(--red);
+        }
+
+        h3{
+            font: var(--title-md);
+            color: var(--gray-600);
+        }
+    }
+
+    #types{
+        padding-top: 56px;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        li{
+            min-width: 280px;
+
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            
+            padding: 20px;
+            
+            img{
+                width: 48px;
+            }
+            
+            h4{
+                padding-top: 20px;
+            }
+        }
+    }
+}
