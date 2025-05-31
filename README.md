@@ -2,9 +2,9 @@
 
 Basic Web Programming Review. HTML, CSS, JavaScript, etc.
 
-### Projects to practice pure html + css, from Rocketseat's FullStack course
+#### Projects to practice pure html + css, from Rocketseat's FullStack course
 
-Click here and view the projects, published on Github Pages:
+Click click on the links below and view the projects, published on Github Pages:
 
 1. [Portfolio](https://rramires.github.io/web_review/portfolio/)
 
