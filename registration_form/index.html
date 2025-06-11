@@ -16,9 +16,55 @@
                 <div id="back">
                     <img src="assets/icons/arrow-left-02.svg" alt="Seta de voltar">
                     <span>Voltar</span>
-                    <h1>Formulário de matrícula</h1>
-                    <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
                 </div>
+                <h1>Formulário de matrícula</h1>
+                <p>
+                    Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+                </p>
+                <form action="#" enctype="multipart/form-data" method="post">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input id="fullname" 
+                                   name="fullname" 
+                                   type="text"
+                                   placeholder="Qual o nome da criança?">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input id="birth" 
+                                   name="birth" 
+                                   type="date"
+                                   placeholder="">
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select id="gender"
+                                    name="gender">
+                                <option value="female">Feminino</option>  
+                                <option value="male">Masculino</option>  
+                                <option value="na">Prefiro não responder</option>   
+                            </select>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea id="medical-info" 
+                                      name="medical-info"
+                                      cols="30"
+                                      rows="10"
+                                      placeholder="A crinça possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"></textarea>
+                        </div>
+                        <div class="droparea-wrapper">
+                            <input id="birth-file" name="birth-file" type="file">
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>
+                                Clique aqui para <br> 
+                                selecionar os arquivos.
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
         <aside>
