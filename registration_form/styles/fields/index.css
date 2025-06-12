@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 label {
     font: var(--text-sm);
     color: var(--text-secondary);
@@ -17,7 +19,8 @@ input, textarea, select {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="date"]:focus-within {
     outline: .25rem solid var(--surface-secondary);
     border: .125rem solid var(--stroke-highlight);
     outline-offset: .1px; /* safari hack */
