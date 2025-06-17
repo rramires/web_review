@@ -48,3 +48,45 @@ input[type="date"] {
 select{
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }
+
+.address .flex{
+    gap: 1.25rem;
+}
+
+
+.input-wrapper:has([disabled]){
+    opacity: .5;
+}
+
+
+input {
+    &[disabled] {
+        background-color: var(--surface-disabled);
+
+        border: .125rem solid var(--stroke-default);
+    }
+
+    &:invalid {
+        border: .125rem solid var(--semantic-error);
+    }
+
+    & + small {
+        font: var(--text-sm);
+        color: #78716C;
+        display: inline-block;
+        margin-top: .25rem;
+    }
+
+     &[required] + .error {
+        display: flex;
+        align-items: center;
+        margin-top: .25rem;
+        gap: .25rem;
+        font: var(--text-sm);
+        color: var(--semantic-error);
+    }
+
+    &:valid + .error{
+        display: none;
+    }
+}
