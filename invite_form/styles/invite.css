@@ -1,0 +1,48 @@
+#invite {
+    padding: 5rem;
+
+    h2 {
+        width: 35rem;
+        color: var(--text-heading);
+        font: var(--head-md);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        gap: 48px;
+
+        section div {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+
+            img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            h3 {
+                color: var(--text-heading);
+                font: var(--head-sm);
+            }
+        }
+
+        section[id='about'] {
+
+        }
+
+        section[id='customize'] {
+            
+        }
+
+        section[id='agree'] {
+            hr {
+                height: 0.0625rem;
+            }
+
+            
+        }
+    }
+}

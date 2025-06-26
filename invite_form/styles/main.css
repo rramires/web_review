@@ -22,10 +22,7 @@
         border-radius: 0 .5rem 8px .5rem;
         outline: 1.25rem solid var(--shape-background);
 
-        div[id="bg-form"] {
-
-            /* FIXME: Temporário - remover! */ height: 200vh;  
-
+        div[id="invite"] {
             background-color: var(--shape-body);
             border-radius: .5rem;
         }
