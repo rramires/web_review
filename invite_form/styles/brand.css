@@ -1,0 +1,28 @@
+#bg-brand {
+    width: inherit;
+    height: inherit;
+    background-image: url(../assets/brand-bg.jpg);
+    background-size: 100%;
+    border-radius: .5rem;
+
+    padding: 2rem;
+    
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+    div {
+
+        h1 {
+            font: var(--title-logo);
+            color: var(--accent-pink);
+        }
+
+        p {
+            font: var(--body-sm);
+            font-weight: 100;
+            color: var(--text-heading);
+        }
+    }
+}
