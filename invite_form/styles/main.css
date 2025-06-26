@@ -1,0 +1,33 @@
+.wrapper {
+    max-width: 80rem;
+    margin: 1.25rem auto;
+
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    gap: 1.25rem;
+    align-items: flex-start;
+
+    aside {
+
+        width: 100%;
+        height: 45.5rem;
+        background-color: var(--shape-background);
+        border-radius: .5rem 0 0 .5rem;
+        outline: 1.25rem solid var(--shape-background);
+    }
+
+    main {
+        
+        background-color: var(--shape-background);
+        border-radius: 0 .5rem 8px .5rem;
+        outline: 1.25rem solid var(--shape-background);
+
+        div[id="bg-form"] {
+
+            /* FIXME: Temporário - remover! */ height: 200vh;  
+
+            background-color: var(--shape-body);
+            border-radius: .5rem;
+        }
+    }
+}
