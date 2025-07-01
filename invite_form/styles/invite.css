@@ -13,7 +13,11 @@
         margin-top: 2.5rem;
         gap: 48px;
 
-        section div {
+        fieldset {
+            border: none;
+        }
+
+        fieldset legend {
             display: flex;
             align-items: center;
             gap: .75rem;
@@ -30,7 +34,7 @@
         }
 
         section[id='about'] {
-
+            
         }
 
         section[id='customize'] {
