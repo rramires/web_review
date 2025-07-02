@@ -81,6 +81,88 @@ form {
         }
     }
 
+    div[id="colors"] {
+        display: flex;
+        justify-content: space-between;
+        gap: .75rem;
+        margin-block: 1rem 1.75rem;
+
+        .content-radio {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: var(--shape-button);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            
+            & .color-radio {
+                position: absolute;
+
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+
+                & input, & input:hover, & input:focus {
+                    appearance: none;
+
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+
+            &:has(:checked) {
+                outline: .125rem solid var(--brand-light);
+            }
+
+            &:hover, &:focus-within {
+                background-color: var(--shape-hover);
+            }
+
+            div > input {
+                border-radius: 50%;
+
+                /* colors */
+                &[value="brand-light"] {
+                    background-color: var(--brand-light);
+                }
+                &[value="navy"] {
+                    background-color: var(--accent-navy);
+                }
+                &[value="purple"] {
+                    background-color: var(--accent-purple);
+                }
+                &[value="fuschia"] {
+                    background-color: var(--accent-fuschia);
+                }
+                &[value="pink"] {
+                    background-color: var(--accent-pink);
+                }
+                &[value="danger"] {
+                    background-color: var(--feedback-danger);
+                }
+                &[value="orange"] {
+                    background-color: var(--accent-orange);
+                }
+                &[value="yellow"] {
+                    background-color: var(--accent-yellow);
+                }
+                &[value="lime"] {
+                    background-color: var(--accent-lime);
+                }
+                &[value="green"] {
+                    background-color: var(--accent-green);
+                }
+                &[value="cyan"] {
+                    background-color: var(--accent-cyan);
+                }
+            }
+        }
+    }
 }
 
 

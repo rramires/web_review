@@ -23,7 +23,8 @@
         outline: 1.25rem solid var(--shape-background);
 
         div[id="invite"] {
-            height: calc(100vh - 2.5rem);
+            overflow: inherit; 
+            height: calc(100vh - 2.5rem); 
             
             background-color: var(--shape-body);
             border-radius: .5rem;
