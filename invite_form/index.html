@@ -29,22 +29,59 @@
                         <legend>
                             <img src="assets/icons/calendar.svg">
                             <h3>Sobre o evento</h3>
-                             
                         </legend>
+                        <div class="input-wrapper">
+                            <label for="nome">Título</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome do evento">
+                        </div>
+                        
+                        <div class="double-grid">
+                            <div class="input-date">
+                                <label for="init">Início</label>
+                                <input type="datetime-local" id="init" name="init">
+                            </div>
+                            <div class="input-date">
+                                <label for="end">Fim</label>
+                                <input type="datetime-local" id="end" name="end">
+                            </div>
+                            <div>
+                                <label>Tipo</label>
+                                <div id="local-type" class="double-grid border-fields">
+                                    <div id="choose-inperson">
+                                        <img id="inperson" src="assets/icons/building.svg">
+                                        <label for="inperson">Presencial</label>
+                                        <input type="radio" id="inperson" value="inperson" name="local" checked>
+                                    </div>
+                                    <div id="choose-local">
+                                        <img id="local" src="assets/icons/video.svg">
+                                        <label for="online">Online</label>
+                                        <input type="radio" id="inperson" value="inperson" name="local">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="address">Local</label>
+                                <input type="text" id="address" name="address" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+                        <div id="description">
+                            <label for="description">Descrição</label>
+                            <textarea id="description" name="description" placeholder="Escreva sobre os detalhes do evento" rows="20" cols="20"></textarea>
+                        </div>
                     </fieldset>
                     <fieldset id="customize">
                         <legend>
                             <img src="assets/icons/paintbrush.svg">
                             <h3>Personalização</h3>
-
                         </legend>
+
                     </fieldset>
                     <fieldset id="contact">
                         <legend>
                             <img src="assets/icons/contact.svg">
                             <h3>Dados para contato</h3>
-
                         </legend>
+                        
                     </fieldset>
                     <fieldset id="agree">
                         <hr>

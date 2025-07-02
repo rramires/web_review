@@ -1,0 +1,87 @@
+form {
+
+    label {
+        display: block;
+        color: var(--text-body);
+        font: 400 var(--body-sm);
+    }
+
+    input:not([type="radio"]):focus-within, textarea:focus-within {
+        outline: 1px solid var(--brand-light);
+    }
+
+    .double-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .border-fields, input:not([type="radio"], [type="checkbox"]), textarea {
+        margin-top: .75rem;
+        width: 100%;
+        height: 3rem;
+        border-radius: .5rem;
+        border: .125rem solid var(--input-stroke);
+        background-color: var(--input-base);
+    }
+
+    /* All minus radio and checkbox */
+    input:not([type="radio"], [type="checkbox"]), textarea {
+        color: var(--input-placeholder);
+        font: 400 var(--body-md);
+        padding: 1rem;
+    }
+
+    input[type="datetime-local"] {
+        text-transform: uppercase;
+        color: var(--input-placeholder);
+        font: 400 var(--body-md);
+    }
+
+    div[id="local-type"] {
+
+        div[id="choose-inperson"], div[id="choose-local"] {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            position: relative;
+
+            & input, & input:hover, & input:focus {
+                position: absolute;
+
+                appearance: none;
+                height: 3rem;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            &:has(:checked) {
+                background-color: var(--shape-button);
+                border-radius: .25rem;
+                margin: .25rem;
+    
+                img[id="inperson"] {
+                    content: url(../assets/icons/building-selected.svg);
+                }
+
+                img[id="local"] {
+                    content: url(../assets/icons/video-selected.svg);
+                }
+            }
+        }
+    }
+
+    div[id="description"] {
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 8.5rem;
+        }
+    }
+
+}
+
+
+
