@@ -50,8 +50,7 @@ form {
 
             & input, & input:hover, & input:focus {
                 position: absolute;
-
-                appearance: none;
+                appearance: none; 
                 height: 3rem;
                 width: 100%;
                 cursor: pointer;
@@ -160,6 +159,56 @@ form {
                 &[value="cyan"] {
                     background-color: var(--accent-cyan);
                 }
+            }
+        }
+    }
+
+    .quad-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+    }
+
+    div[id="theme"] {
+        margin-top: 1rem;
+
+        .theme-card {
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+            position: relative;
+            display: grid;
+            align-items: center;
+
+            & img {
+                border-radius: .25rem;
+                margin: .25rem;
+                width: 95%;
+                object-fit: cover;
+            }
+
+            label {
+                font: 400 var(--body-sm);
+                color: var(--text-heading);
+                display: block;
+                margin-inline: auto;
+                margin-block: .25rem .5rem;
+            }
+
+            & input {
+                appearance: none;
+                position: absolute;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            &:hover, &:focus-within {
+                background-color: var(--shape-hover);
+            }
+
+            &:has(:checked) {
+                outline: 2px solid var(--brand-light);
             }
         }
     }
