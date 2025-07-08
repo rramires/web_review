@@ -212,6 +212,77 @@ form {
             }
         }
     }
+
+    div[id="bright-upload"] {
+        margin-top: 1.75rem;
+
+        div[bright] {
+
+            & label {
+                color: var(--text-body);
+            }
+
+            & div[chooser] {
+                margin-top: .75rem;
+
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+
+                & span {
+                    font: 400 var(--body-sm);
+                    color: var(--text-heading);
+                }
+
+                .claro {
+                    display: none;
+                }
+
+                &:has(:checked) {
+                    & .escuro {
+                        display: none;
+                    }
+                    & .claro {
+                        display: unset;
+                    }
+                }
+
+                div[check] {
+                    background-color: var(--input-base);
+                    width: 4rem;
+                    height: 2rem;
+                    border-radius: 1rem;
+                    border: 1px solid var(--input-stroke);
+
+                    display: grid;
+                    align-items: center;
+
+                    position: relative;
+
+                    & input {
+                        position: absolute;
+                        
+                        all: unset;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        background-color: var(--input-stroke);
+                        border-radius: 50%;
+                        margin: .25rem;
+                        cursor: pointer;
+                    }
+                    &:has(:checked) {
+                        background-color: var(--brand-light);
+                        & input {
+                            background-color: var(--text-heading);
+                            justify-self: end;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Upload Área */
+    }
 }
 
 
