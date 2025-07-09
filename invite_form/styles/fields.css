@@ -25,6 +25,42 @@ form {
         font: 400 var(--body-sm);
     }
 
+    .required {
+
+        & .danger {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin-top: .5rem;
+
+            & span {
+                color: var(--feedback-danger);
+                font: var(--body-xs);
+            }
+
+            img {
+                height: 1rem;
+                width: 1rem;
+            }
+
+        }
+
+        & input {
+            &:invalid {
+                border: 1px solid var(--feedback-danger);
+            }
+
+            &:focus-within {
+                border: none;
+            }
+
+            &:valid + .danger, &:focus-within + .danger {
+                    display: none;
+            }
+        }
+    }
+
+
     input:not([type="radio"]):focus-within, textarea:focus-within {
         outline: 1px solid var(--brand-light);
     }
@@ -396,7 +432,34 @@ form {
             }
         }
     }
+
+    div[id="send"] {
+        margin-top: 3rem;
+        margin-left: auto;
+            
+        background-color: var(--brand-dark);
+        border-radius: .5rem;
+    
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        padding: .75rem 1.25rem;
+        
+        cursor: pointer;
+        
+        & img {
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+
+        & button {
+            all: unset;
+            font: 500 var(--body-md);
+            color: var(--text-heading);
+        }
+
+        &:hover {
+            background-color: var(--brand-mid);
+        }
+    }
 }
-
-
-

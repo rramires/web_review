@@ -232,9 +232,13 @@
                             <img src="assets/icons/contact.svg">
                             <h3>Dados para contato</h3>
                         </legend>
-                        <div>
+                        <div class="required">
                             <label for="person">Nome</label>
-                            <input type="text" name="person" id="person" placeholder="Nome completo" >
+                            <input type="text" name="person" id="person" placeholder="Nome completo" required>
+                            <div class="danger">
+                                <img src="./assets/icons/circle-alert.svg" alt="alert">
+                                <span>Campo obrigatório</span>
+                            </div>
                         </div>
                         <div class="double-grid">
                             <div>
@@ -250,7 +254,6 @@
                     <!-- agree -->
                     <fieldset id="agree">
                         <hr>
-                         
                         <div id="checks">
                             <div class="align">
                                 <div class="box">
@@ -282,9 +285,13 @@
                                 </label>
                             </div>
                         </div>
-                        
-                        <!-- Send -->
-
+                        <!-- send -->
+                        <div id="send">
+                            <img src="./assets/icons/ticket.svg" alt="ticket">
+                            <button type="submit">
+                                <span>Gerar convite</span>
+                            </button>
+                        </div>
                     </fieldset>
                 </form>
             </div>
