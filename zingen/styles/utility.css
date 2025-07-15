@@ -1,0 +1,15 @@
+.container {
+    --max-width: 375px;
+    /* width: min(var(--max-width), 100% - var(--px-lg) * 2);  */
+    max-width: var(--max-width);
+    width: calc(100% - var(--px-lg) * 2); 
+    /* only for test */
+    border: 1px solid red;
+    margin: auto;
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 80rem;
+    }
+}
