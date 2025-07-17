@@ -83,6 +83,10 @@ ul[role="list"] {
     list-style: none;
 }
 
+hr {
+    margin: 1rem;
+}
+
 @media (width >= 80em) {
     :root {
         /* font sizes */
