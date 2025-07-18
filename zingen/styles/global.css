@@ -98,6 +98,11 @@ hr {
     margin: 1rem;
 }
 
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
 @media (width >= 80em) {
     :root {
         /* font sizes */
