@@ -21,7 +21,7 @@
     max-width: var(--max-width);
     width: calc(100% - var(--px-lg) * 2); 
     /* only for test */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
 }
 
@@ -33,12 +33,21 @@
     display: flex;
 }
 
+.itens-center{
+    align-items: center;
+}
+
 .grid {
     display: grid;
 }
 
 .gap-1 {
     gap: 1rem;
+}
+
+
+.gap-1\.5 {
+    gap: 1.5rem;
 }
 
 .even-columns {
