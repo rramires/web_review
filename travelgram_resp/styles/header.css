@@ -1,0 +1,63 @@
+header {
+    padding-block: 2rem;
+    font: var(--text-md);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    gap: 2rem;
+}
+
+#profile > div {
+    max-width: 24rem;
+}
+
+#profile img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#profile h1 {
+    font: var(--text-lg);
+    color: var(--text-color-primary);
+}
+
+#profile p {
+    margin-top: 0.5rem;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 17.5rem;
+}
+
+#info li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media (width <= 45em) {
+    header .container {
+        align-items: start;
+    }
+
+    #profile > div {
+        max-width: none;
+    }
+
+    #info {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -17,15 +17,32 @@
     /* Fonts */
     --font-family: "Poppins", sans-serif;
     /* Font Sizes */
-    --text-sm: 12px/1.75 var(--font-family);
-    --text-md: 14px/175% var(--font-family);
-    --text: 16px/1.5 var(--font-family);
-    --text-lg: bold 32px/125% var(--font-family);
+    --text-sm: .75rem/1.75 var(--font-family);
+    --text-md: .875rem/175% var(--font-family);
+    --text: 1rem/1.5 var(--font-family);
+    --text-lg: bold 2rem/125% var(--font-family);
 }
 
 body {
     font: var(--text);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
+}
+
+.container {
+    padding-inline: 2rem;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+@media (width <= 45em) {
+    .desktop-only {
+        display: none;
+    }
+
+    .flexdir-col {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
