@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-block: 24px;
+    align-items: center;
+}
+
+footer span:nth-child(1) {
+    margin-right: auto;
+}
+
+@media (width <= 45em) {
+    footer span:nth-child(1) {
+        margin-right: initial;
+    }
+
+    footer span {
+        margin: 0 auto;
+    }
+}
